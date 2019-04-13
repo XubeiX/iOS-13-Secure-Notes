@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7E3479D22261DC4100F0763F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479D12261DC4100F0763F /* AppDelegate.swift */; };
-		7E3479D42261DC4100F0763F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479D32261DC4100F0763F /* ViewController.swift */; };
+		7E3479D42261DC4100F0763F /* NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479D32261DC4100F0763F /* NoteVC.swift */; };
 		7E3479D72261DC4100F0763F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3479D52261DC4100F0763F /* Main.storyboard */; };
 		7E3479D92261DC4200F0763F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3479D82261DC4200F0763F /* Assets.xcassets */; };
 		7E3479DC2261DC4200F0763F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3479DA2261DC4200F0763F /* LaunchScreen.storyboard */; };
+		7E3479E92261DEC400F0763F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479E82261DEC400F0763F /* Note.swift */; };
+		7E3479EB2261DF1900F0763F /* LockStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479EA2261DF1900F0763F /* LockStatus.swift */; };
+		7E3479ED2261DF7B00F0763F /* NoteObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479EC2261DF7B00F0763F /* NoteObjects.swift */; };
+		7E3479EF2261E30600F0763F /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479EE2261E30600F0763F /* NoteCell.swift */; };
+		7E3479F12261E5D900F0763F /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479F02261E5D900F0763F /* NoteDetailVC.swift */; };
+		7E3479F32261E9C100F0763F /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3479F22261E9C100F0763F /* Utilites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E3479CE2261DC4100F0763F /* SecureNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3479D12261DC4100F0763F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E3479D32261DC4100F0763F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E3479D32261DC4100F0763F /* NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVC.swift; sourceTree = "<group>"; };
 		7E3479D62261DC4100F0763F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E3479D82261DC4200F0763F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E3479DB2261DC4200F0763F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E3479DD2261DC4200F0763F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3479E82261DEC400F0763F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		7E3479EA2261DF1900F0763F /* LockStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockStatus.swift; sourceTree = "<group>"; };
+		7E3479EC2261DF7B00F0763F /* NoteObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObjects.swift; sourceTree = "<group>"; };
+		7E3479EE2261E30600F0763F /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		7E3479F02261E5D900F0763F /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		7E3479F22261E9C100F0763F /* Utilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +83,7 @@
 		7E3479E32261DC5700F0763F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7E3479D32261DC4100F0763F /* ViewController.swift */,
+				7E3479D32261DC4100F0763F /* NoteVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,6 +91,8 @@
 		7E3479E42261DC6500F0763F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E3479EE2261E30600F0763F /* NoteCell.swift */,
+				7E3479F02261E5D900F0763F /* NoteDetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +100,7 @@
 		7E3479E52261DC6A00F0763F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7E3479E82261DEC400F0763F /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +108,7 @@
 		7E3479E62261DC7600F0763F /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				7E3479EA2261DF1900F0763F /* LockStatus.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -100,6 +116,8 @@
 		7E3479E72261DC7B00F0763F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7E3479EC2261DF7B00F0763F /* NoteObjects.swift */,
+				7E3479F22261E9C100F0763F /* Utilites.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -175,8 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3479D42261DC4100F0763F /* ViewController.swift in Sources */,
+				7E3479ED2261DF7B00F0763F /* NoteObjects.swift in Sources */,
+				7E3479F12261E5D900F0763F /* NoteDetailVC.swift in Sources */,
+				7E3479EB2261DF1900F0763F /* LockStatus.swift in Sources */,
+				7E3479D42261DC4100F0763F /* NoteVC.swift in Sources */,
+				7E3479F32261E9C100F0763F /* Utilites.swift in Sources */,
+				7E3479EF2261E30600F0763F /* NoteCell.swift in Sources */,
 				7E3479D22261DC4100F0763F /* AppDelegate.swift in Sources */,
+				7E3479E92261DEC400F0763F /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
